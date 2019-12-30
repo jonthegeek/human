@@ -1,7 +1,9 @@
 Package: human
 Title: Human-in-the-Loop NLP
 Version: 0.0.0.9000
-Authors@R: person('Jon', 'Harmon', email = 'jonthegeek@gmail.com', role = c('cre', 'aut'))
+Authors@R: person(
+    'Jon', 'Harmon', email = 'jonthegeek@gmail.com', role = c('cre', 'aut')
+    )
 Description: NLP models benefit from human input, whether it be helping to fix 
     spelling issues or checking labels. This package contains a shiny app to 
     help perform those actions.
@@ -10,7 +12,15 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     shiny (>= 1.4.0),
-    golem (>= 0.1)
+    golem (>= 0.1),
+    processx,
+    attempt,
+    DT,
+    glue,
+    htmltools
 RoxygenNote: 7.0.2
 URL: https://github.com/jonthegeek/human
 BugReports: https://github.com/jonthegeek/human/issues
+Suggests: 
+    testthat,
+    covr
